@@ -1,700 +1,1650 @@
-<!DOCTYPE html>
+<html class="light" lang="en">
+  <head></head>
+  <body
+    class="bg-surface font-body text-body text-on-surface antialiased overflow-x-hidden"
+  >
+    ```html
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Marketing Breath - B2B Marketing Agency</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "tertiary-fixed-dim": "#c4c7c9",
-                "error-container": "#ffdad6",
-                "on-secondary-container": "#631700",
-                "surface-tint": "#575b8a",
-                "surface-dim": "#cbdbf5",
-                "primary-fixed": "#e0e0ff",
-                "on-primary-fixed-variant": "#3f4371",
-                "on-error-container": "#93000a",
-                "on-tertiary-fixed": "#191c1e",
-                "surface-variant": "#d3e4fe",
-                "surface-container-lowest": "#ffffff",
-                "secondary-fixed": "#ffdbd1",
-                "on-tertiary": "#ffffff",
-                "error": "#ba1a1a",
-                "tertiary": "#1f2224",
-                "on-error": "#ffffff",
-                "surface-container-low": "#eff4ff",
-                "on-background": "#0b1c30",
-                "tertiary-container": "#34383a",
-                "on-secondary-fixed-variant": "#862300",
-                "on-secondary": "#ffffff",
-                "on-tertiary-fixed-variant": "#444749",
-                "on-primary-fixed": "#131643",
-                "surface": "#f8f9ff",
-                "secondary-fixed-dim": "#ffb59f",
-                "on-surface": "#0b1c30",
-                "inverse-primary": "#bfc2f9",
-                "surface-container-high": "#dce9ff",
-                "secondary": "#ab360e",
-                "on-secondary-fixed": "#3a0a00",
-                "on-primary-container": "#999cd0",
-                "primary-fixed-dim": "#bfc2f9",
-                "on-surface-variant": "#46464f",
-                "primary": "#191d49",
-                "on-primary": "#ffffff",
-                "on-tertiary-container": "#9ea1a3",
-                "outline-variant": "#c7c5d0",
-                "inverse-surface": "#213145",
-                "surface-container": "#e5eeff",
-                "outline": "#777680",
-                "surface-container-highest": "#d3e4fe",
-                "background": "#f8f9ff",
-                "surface-bright": "#f8f9ff",
-                "inverse-on-surface": "#eaf1ff",
-                "tertiary-fixed": "#e0e3e5",
-                "secondary-container": "#fd7045",
-                "primary-container": "#2f3360"
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Marketing Breath - We Drive Visibility</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f6f2f7",
+              "primary-fixed-dim": "#bfc2f9",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#131643",
+              "surface-tint": "#575b8a",
+              "on-secondary-fixed": "#3a0a00",
+              "tertiary-container": "#493300",
+              "secondary-container": "#fd7045",
+              "on-tertiary-fixed": "#261900",
+              "inverse-primary": "#bfc2f9",
+              "on-primary-fixed-variant": "#3f4371",
+              "primary-container": "#2f3360",
+              "on-surface": "#1b1b1f",
+              "secondary-fixed": "#ffdbd1",
+              "on-surface-variant": "#46464f",
+              "surface-container-highest": "#e5e1e6",
+              "secondary-fixed-dim": "#ffb59f",
+              "on-tertiary-container": "#bc9b5f",
+              error: "#ba1a1a",
+              "tertiary-fixed": "#ffdea5",
+              primary: "#191d49",
+              "on-secondary-container": "#631700",
+              "surface-container": "#f0edf1",
+              "primary-fixed": "#e0e0ff",
+              "tertiary-fixed-dim": "#e5c281",
+              surface: "#fcf8fd",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#eae7ec",
+              "on-background": "#1b1b1f",
+              "on-error": "#ffffff",
+              "on-secondary-fixed-variant": "#862300",
+              "surface-bright": "#fcf8fd",
+              "on-primary-container": "#999cd0",
+              "on-tertiary-fixed-variant": "#5b430e",
+              secondary: "#ab360e",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              outline: "#777680",
+              "inverse-surface": "#303034",
+              "inverse-on-surface": "#f3f0f4",
+              background: "#fcf8fd",
+              "on-primary": "#ffffff",
+              tertiary: "#2e1f00",
+              "surface-variant": "#e5e1e6",
+              "outline-variant": "#c7c5d0",
+              "on-tertiary": "#ffffff",
+              "surface-dim": "#dcd9dd",
+              "brand-coral": "#FE7146",
+              "brand-navy": "#2f3360",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "element-gap": "16px",
+              "stack-gap": "32px",
+              "section-padding-mobile": "60px",
+              gutter: "24px",
+              "section-padding-desktop": "100px",
+              "container-max-width": "1240px",
+            },
+            fontFamily: {
+              eyebrow: ["Plus Jakarta Sans"],
+              h1: ["Plus Jakarta Sans"],
+              body: ["Inter"],
+              "h1-mobile": ["Plus Jakarta Sans"],
+              "list-item": ["Inter"],
+              h2: ["Plus Jakarta Sans"],
+              cta: ["Plus Jakarta Sans"],
+              h3: ["Plus Jakarta Sans"],
+              "h2-mobile": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              eyebrow: [
+                "14px",
+                { lineHeight: "1", letterSpacing: "1px", fontWeight: "600" },
+              ],
+              h1: [
+                "56px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              body: ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "h1-mobile": ["36px", { lineHeight: "1.2", fontWeight: "800" }],
+              "list-item": ["15px", { lineHeight: "1.5", fontWeight: "400" }],
+              h2: [
+                "42px",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              cta: ["16px", { lineHeight: "1", fontWeight: "600" }],
+              h3: [
+                "26px",
+                { lineHeight: "1.4", letterSpacing: "0", fontWeight: "600" },
+              ],
+              "h2-mobile": ["30px", { lineHeight: "1.3", fontWeight: "700" }],
+            },
+          },
         },
-        "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "0.5rem",
-                "xl": "0.75rem",
-                "full": "9999px"
-        },
-        "spacing": {
-                "container-max": "1280px",
-                "gutter": "24px",
-                "element-gap": "16px",
-                "section-gap-desktop": "120px",
-                "section-gap-mobile": "64px"
-        },
-        "fontFamily": {
-                "headline-xl": [
-                        "Plus Jakarta Sans"
-                ],
-                "headline-lg": [
-                        "Plus Jakarta Sans"
-                ],
-                "display-lg": [
-                        "Plus Jakarta Sans"
-                ],
-                "headline-lg-mobile": [
-                        "Plus Jakarta Sans"
-                ],
-                "body-md": [
-                        "Inter"
-                ],
-                "label-bold": [
-                        "Inter"
-                ],
-                "body-lg": [
-                        "Inter"
-                ]
-        },
-        "fontSize": {
-                "headline-xl": [
-                        "48px",
-                        {
-                                "lineHeight": "56px",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "headline-lg": [
-                        "36px",
-                        {
-                                "lineHeight": "44px",
-                                "fontWeight": "700"
-                        }
-                ],
-                "display-lg": [
-                        "72px",
-                        {
-                                "lineHeight": "80px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "800"
-                        }
-                ],
-                "headline-lg-mobile": [
-                        "28px",
-                        {
-                                "lineHeight": "36px",
-                                "fontWeight": "700"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "24px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "label-bold": [
-                        "14px",
-                        {
-                                "lineHeight": "20px",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "28px",
-                                "fontWeight": "400"
-                        }
-                ]
-        }
-},
-    },
-  }
-</script>
-<style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(253, 112, 69, 0.15), 0 4px 6px -2px rgba(253, 112, 69, 0.05);
-            transform: translateY(-2px);
-        }
-        .glow-hover:hover {
-            box-shadow: 0 0 15px rgba(253, 112, 69, 0.3);
-        }
-        .mega-menu {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .group:hover .mega-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .grid-bg {
-            background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-        }
+      };
+    </script>
+    <style>
+      .mesh-bg {
+        background-image:
+          radial-gradient(
+            at 40% 20%,
+            hsla(28, 100%, 74%, 0.15) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 0%,
+            hsla(189, 100%, 56%, 0.1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 50%,
+            hsla(355, 100%, 93%, 0.1) 0px,
+            transparent 50%
+          );
+        background-color: #f8f9fa;
+      }
+      .soft-lift {
+        box-shadow: 0 10px 30px -10px rgba(47, 51, 96, 0.08);
+      }
+      .btn-coral {
+        background-color: #fe7146;
+        color: #ffffff;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .btn-coral:hover {
+        transform: scale(0.98);
+        box-shadow: 0 4px 14px rgba(254, 113, 70, 0.3);
+      }
+      .btn-coral:active {
+        transform: scale(0.95);
+      }
+      .text-coral {
+        color: #fe7146;
+      }
+      .text-navy {
+        color: #2f3360;
+      }
+      .bg-navy {
+        background-color: #2f3360;
+      }
     </style>
-</head>
-<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary">
-<!-- TopNavBar -->
-<nav class="bg-surface/80 dark:bg-primary/80 backdrop-blur-xl border-b border-white/20 dark:border-white/10 shadow-sm backdrop-blur-md fixed top-0 w-full z-50">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
-<!-- Brand Logo -->
-<a class="flex items-center" href="#">
-<img alt="Marketing Breath Logo" class="h-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7F9f_-F1fGJ07KLYlMboaU-DsW6sj0pv3-54uxmaypSNE0CDLf5d2hITOYi5Qf2Kg7E1sQslVUFxlqqQ7SzXELz9txpanjiAWCqQ52AuWRK1kOrSCH_OMNQyLNubs3YCXx0xaBWxcIqvGqIgeS00pQxS5EsDS1WWKhn0yg4Wb7zbgb2ZSdM3onIPWSjvqE7i13eVmTJzyh4vUAPMKiGarkl6Df9_B2VEBOneVS_QOUNGDBMT0KgrMVwtzXMDS1kpeoJlXKNV3j8E"/>
-</a>
-<!-- Desktop Navigation -->
-<div class="hidden md:flex items-center gap-8">
-<!-- Services Dropdown (SEO, Content, Paid, Strategy) -->
-<div class="group relative">
-<button class="text-on-surface dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-bold flex items-center gap-1">
-                        Services
-                        <span class="material-symbols-outlined text-[20px]">expand_more</span>
-</button>
-<!-- Mega Menu -->
-<div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] glass-card rounded-xl p-6 grid grid-cols-2 gap-6 z-50">
-<div>
-<h4 class="font-label-bold text-primary mb-3 uppercase tracking-wider">Search &amp; Content</h4>
-<ul class="space-y-3">
-<li><a class="text-body-md text-on-surface-variant hover:text-secondary transition-colors block" href="#">SEO</a></li>
-<li><a class="text-body-md text-on-surface-variant hover:text-secondary transition-colors block" href="#">Content</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-bold text-primary mb-3 uppercase tracking-wider">Performance &amp; Strategy</h4>
-<ul class="space-y-3">
-<li><a class="text-body-md text-on-surface-variant hover:text-secondary transition-colors block" href="#">Paid</a></li>
-<li><a class="text-body-md text-on-surface-variant hover:text-secondary transition-colors block" href="#">Strategy</a></li>
-</ul>
-</div>
-</div>
-</div>
-<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-bold" href="#">The Lab</a>
-<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors font-label-bold" href="#">Results</a>
-</div>
-<!-- Actions -->
-<div class="hidden md:flex items-center gap-4">
-<a class="font-label-bold text-primary hover:text-secondary transition-colors" href="#">Login</a>
-<a class="bg-secondary-container text-on-secondary font-label-bold px-6 py-2.5 rounded-lg hover:-translate-y-0.5 glow-hover transition-all duration-300" href="#">Get Started</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-[28px]">menu</span>
-</button>
-</div>
-</nav>
-<!-- Main Content -->
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary-container text-white py-24 md:py-32">
-<!-- Background Elements -->
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-br from-primary-container via-primary to-black opacity-90"></div>
-<div class="absolute top-1/4 left-1/4 w-[800px] h-[800px] bg-secondary-container/20 rounded-full blur-[120px] mix-blend-screen"></div>
-<div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-primary-fixed/20 rounded-full blur-[100px] mix-blend-screen"></div>
-<div class="absolute inset-0 grid-bg opacity-30"></div>
-</div>
-<div class="relative z-10 w-full max-w-container-max mx-auto px-gutter flex flex-col lg:flex-row items-center gap-16">
-<div class="w-full lg:w-1/2 flex flex-col items-start text-left">
-<div class="flex flex-wrap items-center gap-3 mb-6">
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">rocket_launch</span>
-<span class="font-label-bold text-white text-sm">Next-Gen B2B Marketing</span>
-</div>
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">verified</span>
-<span class="font-label-bold text-white text-sm">AI Search Certified</span>
-</div>
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">psychology</span>
-<span class="font-label-bold text-white text-sm">NLP Validated Systems</span>
-</div>
-</div>
-<h1 class="font-display-lg text-white mb-6 leading-tight">Dominate the 2026 Search Ecosystem</h1>
-<p class="font-body-lg text-surface-variant mb-10 leading-relaxed max-w-2xl">
-                        Integrating AI-driven data science and predictive intent mapping to turn traffic into revenue. We build authoritative digital footprints for visionary B2B brands.
-                    </p>
-<div class="flex flex-wrap items-center gap-4 mb-12">
-<a class="bg-secondary-container text-on-secondary font-label-bold px-8 py-4 rounded-lg hover:-translate-y-0.5 shadow-[0_0_20px_rgba(253,112,69,0.4)] hover:shadow-[0_0_30px_rgba(253,112,69,0.6)] transition-all duration-300 flex items-center gap-2 text-lg" href="#">
-                            Get Free Audit
-                            <span class="material-symbols-outlined text-[24px]">arrow_forward</span>
-</a>
-<a class="border border-white/30 bg-white/5 hover:bg-white/10 text-white font-label-bold px-8 py-4 rounded-lg backdrop-blur-sm transition-all duration-300 text-lg" href="#">
-                            View Case Studies
-                        </a>
-</div>
-<!-- Trust Stack -->
-<div class="flex flex-wrap items-center gap-8 pt-8 border-t border-white/20">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[32px] text-white">workspace_premium</span>
-<span class="font-label-bold text-sm text-surface-variant">Google Premier<br/>Partner</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[32px] text-white">emoji_events</span>
-<span class="font-label-bold text-sm text-surface-variant">Clutch Top SEO<br/>Agency 2026</span>
-</div>
-<div class="flex flex-col gap-1">
-<div class="flex text-[#FFD700]">
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-</div>
-<span class="font-label-bold text-xs text-surface-variant">4.9/5 based on 150+ UK Reviews</span>
-</div>
-</div>
-</div>
-<!-- Hero Visual -->
-<div class="w-full lg:w-1/2 relative">
-<div class="aspect-square w-full max-w-[600px] mx-auto relative">
-<!-- Abstract glowing rings or data visualization placeholder -->
-<div class="absolute inset-0 rounded-full border border-white/10 animate-[spin_60s_linear_infinite]"></div>
-<div class="absolute inset-4 rounded-full border border-secondary-container/30 border-dashed animate-[spin_40s_linear_infinite_reverse]"></div>
-<div class="absolute inset-12 rounded-full border border-white/20 animate-[spin_20s_linear_infinite]"></div>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
-<div class="absolute text-center bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-2xl shadow-2xl">
-<span class="material-symbols-outlined text-[80px] text-white mb-4">monitoring</span>
-<p class="font-label-bold text-white uppercase tracking-widest text-lg">Predictive Engine</p>
-<p class="text-secondary-fixed text-sm mt-2">Active Analysis</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Trust Bar -->
-<section class="border-y border-outline-variant/30 bg-surface-container-lowest py-12">
-<div class="max-w-container-max mx-auto px-gutter text-center">
-<p class="font-label-bold text-on-surface-variant mb-8 uppercase tracking-wider text-sm">Trusted by innovative B2B brands</p>
-<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-<!-- Placeholder logos using material icons -->
-<span class="material-symbols-outlined text-[48px]">domain</span>
-<span class="material-symbols-outlined text-[48px]">architecture</span>
-<span class="material-symbols-outlined text-[48px]">corporate_fare</span>
-<span class="material-symbols-outlined text-[48px]">apartment</span>
-<span class="material-symbols-outlined text-[48px]">factory</span>
-</div>
-</div>
-</section>
-<!-- Process Timeline Section -->
-<section class="py-24 md:py-32 bg-surface">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center max-w-3xl mx-auto mb-20">
-<h2 class="font-headline-xl text-primary mb-6">Our Proven Growth System</h2>
-<p class="font-body-lg text-on-surface-variant">A methodical approach to dominating your niche in the AI era.</p>
-</div>
-<div class="relative">
-<!-- Connecting line -->
-<div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-surface-variant via-secondary-container to-surface-variant z-0"></div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
-<!-- Step 1 -->
-<div class="flex flex-col items-center text-center">
-<div class="w-24 h-24 rounded-full bg-white border-4 border-surface shadow-xl flex items-center justify-center mb-6">
-<span class="font-display-lg text-secondary-container text-4xl">01</span>
-</div>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Deep Audit</h3>
-<p class="font-body-md text-on-surface-variant">Comprehensive technical and semantic analysis to uncover gaps in your current digital footprint.</p>
-</div>
-<!-- Step 2 -->
-<div class="flex flex-col items-center text-center">
-<div class="w-24 h-24 rounded-full bg-white border-4 border-surface shadow-xl flex items-center justify-center mb-6">
-<span class="font-display-lg text-secondary-container text-4xl">02</span>
-</div>
-<h3 class="font-headline-lg-mobile text-primary mb-4">AI Intelligence</h3>
-<p class="font-body-md text-on-surface-variant">Mapping predictive intent and structuring content for both LLMs and traditional search algorithms.</p>
-</div>
-<!-- Step 3 -->
-<div class="flex flex-col items-center text-center">
-<div class="w-24 h-24 rounded-full bg-white border-4 border-surface shadow-xl flex items-center justify-center mb-6">
-<span class="font-display-lg text-secondary-container text-4xl">03</span>
-</div>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Market Dominance</h3>
-<p class="font-body-md text-on-surface-variant">Executing high-authority link building and content strategies to secure top-tier visibility.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section (Bento Grid) -->
-<section class="py-24 md:py-32 bg-background">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center max-w-3xl mx-auto mb-20">
-<h2 class="font-headline-xl text-primary mb-6">Structured for Dominance</h2>
-<p class="font-body-lg text-on-surface-variant">Our comprehensive suite of services engineered for the modern search landscape.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Service 1 -->
-<div class="glass-card rounded-2xl p-10 relative overflow-hidden group bg-white">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-container to-transparent opacity-50"></div>
-<span class="font-label-bold text-secondary-container block mb-4 text-sm tracking-widest uppercase">01 — High-Quality Content</span>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Content that earns trust from humans and AI alike.</h3>
-<p class="font-body-md text-on-surface-variant mb-8">We craft entity-rich, intent-driven content built around your brand, products, and audience — designed to rank in traditional search and get cited by AI-powered platforms like Google SGE, Perplexity, and ChatGPT.</p>
-<ul class="space-y-3">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Structured around topics, entities &amp; user intent signals</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Optimised for both featured snippets and LLM citations</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Regularly refreshed to maintain topical authority over time</span>
-</li>
-</ul>
-</div>
-<!-- Service 2 -->
-<div class="glass-card rounded-2xl p-10 relative overflow-hidden group bg-white">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-container to-transparent opacity-50"></div>
-<span class="font-label-bold text-secondary-container block mb-4 text-sm tracking-widest uppercase">02 — Technical SEO &amp; Core Web Vitals</span>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Infrastructure built for speed and crawlability.</h3>
-<p class="font-body-md text-on-surface-variant mb-8">Deep-technical audits ensuring your site architecture meets the rigorous demands of next-gen search engines.</p>
-<ul class="space-y-3">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Real-time speed optimization</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Schema markup for entity recognition</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Headless CMS technical implementation</span>
-</li>
-</ul>
-</div>
-<!-- Service 3 -->
-<div class="glass-card rounded-2xl p-10 relative overflow-hidden group bg-white">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-container to-transparent opacity-50"></div>
-<span class="font-label-bold text-secondary-container block mb-4 text-sm tracking-widest uppercase">03 — NLP Semantic Optimization</span>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Mapping intent through Natural Language Processing.</h3>
-<p class="font-body-md text-on-surface-variant mb-8">We align your digital footprint with LLM understanding patterns to ensure high citation rates in AI responses.</p>
-<ul class="space-y-3">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Latent Semantic Indexing (LSI) strategy</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Vector-based content clustering</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Predictive intent mapping</span>
-</li>
-</ul>
-</div>
-<!-- Service 8 (Featured wider) -->
-<div class="glass-card rounded-2xl p-10 relative overflow-hidden group md:col-span-2 bg-gradient-to-br from-primary-container to-primary text-white border-0 shadow-2xl">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-container to-secondary opacity-100"></div>
-<div class="absolute right-0 bottom-0 opacity-10 translate-x-1/4 translate-y-1/4">
-<span class="material-symbols-outlined text-[300px]">science</span>
-</div>
-<div class="relative z-10">
-<span class="font-label-bold text-secondary-fixed block mb-4 flex items-center gap-2 tracking-widest uppercase text-sm">
-<span class="material-symbols-outlined text-[20px]">science</span>
-                        08 — The Growth Lab
-                    </span>
-<h3 class="font-headline-xl text-white mb-6">Proprietary AI tools for predictive growth.</h3>
-<p class="font-body-lg text-surface-variant mb-10 max-w-2xl">Leveraging our in-house data science models to predict keyword trends before they peak.</p>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="flex flex-col gap-3 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
-<span class="material-symbols-outlined text-[32px] text-secondary-fixed">query_stats</span>
-<span class="font-label-bold text-white text-base">Custom AI keyword prediction</span>
-</div>
-<div class="flex flex-col gap-3 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
-<span class="material-symbols-outlined text-[32px] text-secondary-fixed">widgets</span>
-<span class="font-label-bold text-white text-base">Real-time result widgets</span>
-</div>
-<div class="flex flex-col gap-3 p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
-<span class="material-symbols-outlined text-[32px] text-secondary-fixed">data_exploration</span>
-<span class="font-label-bold text-white text-base">Proprietary data visualization</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Service 9 -->
-<div class="glass-card rounded-2xl p-10 relative overflow-hidden group bg-white">
-<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-container to-transparent opacity-50"></div>
-<span class="font-label-bold text-secondary-container block mb-4 text-sm tracking-widest uppercase">09 — Integrated Growth Strategy</span>
-<h3 class="font-headline-lg-mobile text-primary mb-4">A holistic framework for market dominance.</h3>
-<p class="font-body-md text-on-surface-variant mb-8">Combining all search signals into a unified revenue-driving machine.</p>
-<ul class="space-y-3">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Multi-channel synergy audits</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Long-term market positioning</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-[20px] text-secondary-container shrink-0 mt-0.5">check_circle</span>
-<span class="font-body-md text-on-surface text-sm">Predictive ROI modeling</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Case Studies Grid -->
-<section class="py-24 md:py-32 bg-surface border-y border-outline-variant/30">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div>
-<h2 class="font-headline-xl text-primary mb-4">Proven Results</h2>
-<p class="font-body-lg text-on-surface-variant max-w-2xl">Real data from B2B enterprises dominating the new search landscape.</p>
-</div>
-<a class="font-label-bold text-secondary-container hover:text-secondary flex items-center gap-2 transition-colors" href="#">
-                    View All Case Studies <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Case Study 1 -->
-<div class="group relative rounded-2xl overflow-hidden bg-white shadow-lg border border-outline-variant/50">
-<div class="aspect-video bg-surface-container-high relative overflow-hidden flex items-center justify-center p-8">
-<div class="absolute inset-0 bg-gradient-to-br from-primary-container/80 to-primary/90 mix-blend-multiply"></div>
-<div class="relative z-10 text-center">
-<h4 class="font-display-lg text-white mb-2">+340%</h4>
-<p class="font-label-bold text-secondary-fixed uppercase tracking-wider">AI Search Visibility</p>
-</div>
-</div>
-<div class="p-8">
-<div class="inline-block px-3 py-1 bg-surface-container-low text-primary text-xs font-label-bold rounded-full mb-4 uppercase tracking-wider">Enterprise SaaS</div>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Securing Tier-1 AI Citations for a FinTech Unicorn</h3>
-<p class="font-body-md text-on-surface-variant">How we mapped predictive intent to capture 85% share of voice in SGE responses.</p>
-</div>
-</div>
-<!-- Case Study 2 -->
-<div class="group relative rounded-2xl overflow-hidden bg-white shadow-lg border border-outline-variant/50">
-<div class="aspect-video bg-surface-container-high relative overflow-hidden flex items-center justify-center p-8">
-<div class="absolute inset-0 bg-gradient-to-br from-secondary-container/80 to-secondary/90 mix-blend-multiply"></div>
-<div class="relative z-10 text-center">
-<h4 class="font-display-lg text-white mb-2">+210%</h4>
-<p class="font-label-bold text-white/90 uppercase tracking-wider">Revenue Growth</p>
-</div>
-</div>
-<div class="p-8">
-<div class="inline-block px-3 py-1 bg-surface-container-low text-primary text-xs font-label-bold rounded-full mb-4 uppercase tracking-wider">Cybersecurity</div>
-<h3 class="font-headline-lg-mobile text-primary mb-4">Restructuring Technical Architecture for Next-Gen Crawling</h3>
-<p class="font-body-md text-on-surface-variant">Overhauling a 50k+ page site to align with vector-based semantic search patterns.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-24 md:py-32 bg-background">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-16">
-<h2 class="font-headline-xl text-primary mb-4">Client Validation</h2>
-<div class="flex justify-center text-[#FFD700] mb-4">
-<span class="material-symbols-outlined text-[28px] filled">star</span>
-<span class="material-symbols-outlined text-[28px] filled">star</span>
-<span class="material-symbols-outlined text-[28px] filled">star</span>
-<span class="material-symbols-outlined text-[28px] filled">star</span>
-<span class="material-symbols-outlined text-[28px] filled">star</span>
-</div>
-<p class="font-body-lg text-on-surface-variant">Rated 4.9/5 by marketing leaders worldwide.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/30">
-<div class="flex text-[#FFD700] mb-6">
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-</div>
-<p class="font-body-lg text-on-surface italic mb-8">"They didn't just improve our rankings; they future-proofed our entire digital strategy for the AI era. Outstanding technical depth."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary font-label-bold">JD</div>
-<div>
-<p class="font-label-bold text-primary">James Director</p>
-<p class="text-sm text-on-surface-variant">CMO, TechFlow SaaS</p>
-</div>
-</div>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/30">
-<div class="flex text-[#FFD700] mb-6">
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-</div>
-<p class="font-body-lg text-on-surface italic mb-8">"The only agency we've worked with that truly understands how LLMs parse and cite content. Our pipeline has never been stronger."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary font-label-bold">SW</div>
-<div>
-<p class="font-label-bold text-primary">Sarah West</p>
-<p class="text-sm text-on-surface-variant">VP Marketing, CyberShield</p>
-</div>
-</div>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm border border-outline-variant/30">
-<div class="flex text-[#FFD700] mb-6">
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-<span class="material-symbols-outlined text-[20px] filled">star</span>
-</div>
-<p class="font-body-lg text-on-surface italic mb-8">"Their approach to entity-based SEO and semantic architecture completely revolutionized how we create and distribute content."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary font-label-bold">MR</div>
-<div>
-<p class="font-label-bold text-primary">Michael Reed</p>
-<p class="text-sm text-on-surface-variant">Director of Digital, DataSync</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Founder Statement -->
-<section class="bg-surface overflow-hidden">
-<div class="grid grid-cols-1 lg:grid-cols-2">
-<div class="relative min-h-[500px] lg:min-h-full bg-surface-container-high">
-<!-- Image Placeholder -->
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
-<div class="absolute inset-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-[80px] text-primary/30">person</span>
-</div>
-</div>
-<div class="p-16 lg:p-24 flex flex-col justify-center bg-white">
-<span class="material-symbols-outlined text-secondary-container text-5xl mb-8 opacity-50">format_quote</span>
-<h2 class="font-headline-lg text-primary mb-8 leading-tight">"The rules of search have changed. If you're optimizing for 2020 algorithms, you're already invisible to the AI engines driving tomorrow's B2B decisions."</h2>
-<div>
-<p class="font-label-bold text-primary text-lg">Alex Mercer</p>
-<p class="text-on-surface-variant">Founder &amp; Head of Strategy</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Lead Capture Form (Full Width CTA) -->
-<section class="py-24 md:py-32 bg-primary-container text-white relative overflow-hidden">
-<div class="absolute inset-0 grid-bg opacity-10"></div>
-<div class="max-w-4xl mx-auto px-gutter relative z-10 text-center">
-<h2 class="font-display-lg text-white mb-6">Ready to Dominate?</h2>
-<p class="font-body-lg text-surface-variant mb-12 max-w-2xl mx-auto">Get a free, comprehensive AI search audit and discover how your brand performs in the new ecosystem.</p>
-<form class="bg-white/10 backdrop-blur-xl border border-white/20 p-8 md:p-12 rounded-2xl shadow-2xl">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">
-<div class="space-y-2">
-<label class="font-label-bold text-white text-sm" for="name">Full Name</label>
-<input class="w-full bg-black/20 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container transition-colors" id="name" placeholder="John Doe" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="font-label-bold text-white text-sm" for="email">Work Email</label>
-<input class="w-full bg-black/20 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container transition-colors" id="email" placeholder="john@company.com" type="email"/>
-</div>
-<div class="space-y-2 md:col-span-2">
-<label class="font-label-bold text-white text-sm" for="url">Company Website URL</label>
-<input class="w-full bg-black/20 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container transition-colors" id="url" placeholder="https://example.com" type="url"/>
-</div>
-</div>
-<button class="w-full bg-secondary-container text-on-secondary font-label-bold px-8 py-5 rounded-lg hover:-translate-y-0.5 shadow-[0_0_20px_rgba(253,112,69,0.4)] hover:shadow-[0_0_30px_rgba(253,112,69,0.6)] transition-all duration-300 text-lg uppercase tracking-wider">
-                    Request Free Audit
-                </button>
-<p class="text-sm text-surface-variant mt-6 text-center">No commitment required. We'll analyze your domain within 48 hours.</p>
-</form>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full bg-primary dark:bg-tertiary-container">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-element-gap max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop">
-<div class="col-span-1 md:col-span-1">
-<a class="font-headline-lg text-headline-lg text-secondary-fixed mb-4 block" href="#">Vanguard B2B</a>
-<p class="font-body-md text-surface-bright/70">Propelling deep-tech with high-performance creative.</p>
-</div>
-<div>
-<h4 class="font-label-bold text-surface-bright mb-4 uppercase tracking-wider">Services</h4>
-<ul class="space-y-2">
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">SEO</a></li>
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Content</a></li>
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Paid</a></li>
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Strategy</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-bold text-surface-bright mb-4 uppercase tracking-wider">Company</h4>
-<ul class="space-y-2">
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Case Studies</a></li>
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">The Lab</a></li>
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Contact</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-bold text-surface-bright mb-4 uppercase tracking-wider">Legal</h4>
-<ul class="space-y-2">
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Privacy Policy</a></li>
-<li><a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors text-surface-bright/80 hover:text-surface-bright" href="#">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<div class="border-t border-white/10 py-6 max-w-container-max mx-auto px-gutter text-center">
-<p class="font-body-md text-surface-bright/50">© 2026 Vanguard B2B. Propelling deep-tech with high-performance creative.</p>
-</div>
-</footer>
-</body></html>
+    <style>
+      .banners-wrap {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+      .service-row {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        padding: 20px;
+        border-radius: 24px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+      @media (min-width: 768px) {
+        .service-row {
+          flex-direction: row;
+          padding: 40px;
+        }
+        .service-row.alt {
+          flex-direction: row-reverse;
+        }
+      }
+      .service-row:hover {
+        border-color: #fe7146;
+        transform: scale(1.02);
+        box-shadow: 0 20px 40px rgba(47, 51, 96, 0.08);
+      }
+      .s-text-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .s-vis-col {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 300px;
+        border-radius: 20px;
+        width: 100%;
+      }
+
+      .b-tag {
+        display: inline-block;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 30px;
+        width: fit-content;
+        background: #f6f2f7;
+        color: #2f3360;
+      }
+      .b-title {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.25;
+        color: #2f3360;
+      }
+      .b-body {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: #46464f;
+      }
+      .b-bullets {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 8px;
+      }
+      .b-bullet {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 15px;
+        line-height: 1.55;
+        color: #46464f;
+      }
+      .b-bullet::before {
+        content: "→";
+        flex-shrink: 0;
+        font-size: 16px;
+        margin-top: 1px;
+        font-weight: 700;
+        color: #fe7146;
+      }
+
+      .b-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+      }
+      .b-icon svg {
+        width: 80px;
+        height: 80px;
+      }
+      .b-num {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        opacity: 0.6;
+      }
+
+      .scheme-navy .s-vis-col {
+        background: #2f3360;
+      }
+      .scheme-navy .b-num {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .scheme-coral .s-vis-col {
+        background: #fe7146;
+      }
+      .scheme-coral .b-num {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .scheme-light .s-vis-col {
+        background: #f7f8fc;
+        border: 1px solid #eae7ec;
+      }
+      .scheme-light .b-num {
+        color: rgba(47, 51, 96, 0.35);
+      }
+    </style>
+    <style>
+      .case-study-card {
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+      }
+      .case-study-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(47, 51, 96, 0.12);
+        border-color: #fe7146;
+      }
+      .filter-btn.active {
+        color: #fe7146;
+        border-bottom: 2px solid #fe7146;
+      }
+    </style>
+    <!-- Top Navigation Bar -->
+    <nav
+      class="bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline-variant shadow-sm h-20 transition-all duration-300"
+    >
+      <div
+        class="flex justify-between items-center h-full px-gutter max-w-container-max-width mx-auto gap-8"
+      >
+        <!-- Brand Logo -->
+        <div class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white font-bold text-xl"
+          >
+            MB
+          </div>
+          <div class="font-h2 text-h3 font-bold text-navy whitespace-nowrap">
+            Marketing <span class="text-coral">Breath</span>
+          </div>
+        </div>
+        <!-- Navigation Links (Desktop) -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a
+            class="font-cta text-cta text-navy font-bold border-b-2 border-brand-coral pb-1 hover:text-brand-coral transition-colors duration-200"
+            href="#"
+            >Home</a
+          >
+          <div class="relative group cursor-pointer">
+            <div
+              class="flex items-center gap-1 font-cta text-cta text-on-surface-variant hover:text-brand-coral transition-colors duration-200"
+            >
+              Services
+              <span class="material-symbols-outlined text-[18px]"
+                >expand_more</span
+              >
+            </div>
+          </div>
+          <a
+            class="font-cta text-cta text-on-surface-variant hover:text-brand-coral transition-colors duration-200"
+            href="#"
+            >FAQ</a
+          >
+          <a
+            class="font-cta text-cta text-on-surface-variant hover:text-brand-coral transition-colors duration-200"
+            href="#"
+            >Portfolio</a
+          >
+          <a
+            class="font-cta text-cta text-on-surface-variant hover:text-brand-coral transition-colors duration-200"
+            href="#"
+            >Pricing</a
+          >
+        </div>
+        <!-- Trailing Action -->
+        <div class="hidden md:block">
+          <a
+            class="btn-coral font-cta text-cta px-6 py-3 rounded-lg inline-block"
+            href="#"
+          >
+            Get Free Audit
+          </a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="lg:hidden text-navy">
+          <span class="material-symbols-outlined text-[32px]">menu</span>
+        </button>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        class="mesh-bg min-h-[921px] flex items-center relative overflow-hidden py-[60px]"
+      >
+        <div
+          class="max-w-container-max-width mx-auto px-gutter w-full relative z-10"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Column: Content -->
+            <div class="lg:col-span-6 flex flex-col gap-8 z-20">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="font-h1-mobile md:font-h1 text-h1-mobile md:text-h1 text-navy"
+                >
+                  We Drive Visibility.<br />
+                  You Get <span class="text-coral">Results.</span>
+                </h1>
+                <p
+                  class="font-body text-body text-on-surface-variant text-lg max-w-xl"
+                >
+                  Dominate search everywhere—from Google to AI answers—with
+                  <span class="font-semibold text-coral">GEO, AEO</span> &amp;
+                  advanced marketing strategies.
+                </p>
+              </div>
+              <!-- Feature Icons Grid -->
+              <div class="grid grid-cols-2 md:grid-cols-5 gap-4 py-4">
+                <div class="flex flex-col items-center text-center gap-2">
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-coral"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >location_on</span
+                    >
+                  </div>
+                  <span class="font-cta text-[13px] text-navy">GEO</span>
+                  <span
+                    class="text-[11px] text-on-surface-variant leading-tight"
+                    >Geographic<br />Optimization</span
+                  >
+                </div>
+                <div class="flex flex-col items-center text-center gap-2">
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-coral"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >search</span
+                    >
+                  </div>
+                  <span class="font-cta text-[13px] text-navy">AEO</span>
+                  <span
+                    class="text-[11px] text-on-surface-variant leading-tight"
+                    >Answer Engine<br />Optimization</span
+                  >
+                </div>
+                <div class="flex flex-col items-center text-center gap-2">
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-coral"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >auto_awesome</span
+                    >
+                  </div>
+                  <span class="font-cta text-[13px] text-navy"
+                    >AI Overviews</span
+                  >
+                  <span
+                    class="text-[11px] text-on-surface-variant leading-tight"
+                    >Appear in<br />AI Summaries</span
+                  >
+                </div>
+                <div class="flex flex-col items-center text-center gap-2">
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-coral"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >trending_up</span
+                    >
+                  </div>
+                  <span class="font-cta text-[13px] text-navy"
+                    >Higher Rankings</span
+                  >
+                  <span
+                    class="text-[11px] text-on-surface-variant leading-tight"
+                    >More Traffic.<br />More Leads.</span
+                  >
+                </div>
+                <div
+                  class="flex flex-col items-center text-center gap-2 md:col-span-1 col-span-2"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-coral"
+                  >
+                    <span
+                      class="material-symbols-outlined"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >track_changes</span
+                    >
+                  </div>
+                  <span class="font-cta text-[13px] text-navy">Better ROI</span>
+                  <span
+                    class="text-[11px] text-on-surface-variant leading-tight"
+                    >Smarter<br />Marketing.</span
+                  >
+                </div>
+              </div>
+              <!-- CTA Area -->
+              <div class="flex flex-col gap-3 items-start">
+                <a
+                  class="btn-coral font-cta text-cta px-8 py-4 rounded-lg flex items-center gap-2 text-lg"
+                  href="#"
+                >
+                  Get Your Free Strategy Call
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+                <p class="text-sm text-on-surface-variant font-medium ml-2">
+                  No contracts. Just results.
+                </p>
+              </div>
+            </div>
+            <!-- Right Column: Dashboard Graphic -->
+            <div
+              class="lg:col-span-6 relative w-full h-full min-h-[500px] flex items-center justify-center"
+            >
+              <!-- We use an image placeholder for the complex dashboard graphic to ensure high fidelity -->
+              <div class="relative w-full max-w-lg mx-auto aspect-square">
+                <img
+                  alt="Modern data analytics dashboard interface on desktop and mobile devices, showing AI overview summaries, search ranking metrics, and local map pack integration. Clean corporate aesthetic with deep navy and vibrant coral accents."
+                  class="w-full h-full object-contain drop-shadow-2xl z-10 relative"
+                  data-alt="A highly detailed 3D isometric illustration of a modern digital marketing dashboard interface. The scene features a sleek desktop monitor displaying AI overview summaries and search metrics, flanked by a mobile phone showing local map pack data. Floating glassmorphism badges with vibrant coral icons emphasize key features like GEO and AEO. The lighting is high-key studio softbox, creating a bright, clean, corporate tech aesthetic with deep navy blue (#2f3360) structures and vibrant coral (#fe7146) glowing accents against a pristine white studio background."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ_-BXI7s7D96gFhngkmWkUPIb_G5uSp58Wym0YQnjPDoYYD_X7arw2tnE4IX22WuyIu0q02OBozsh-EAm-zb7HUAE-1kWIXIWSSRZ4ZpNNMvhQzF3YIAGIXeFIM6oPNYU6RGiKttzarVrstu2nJjbrJ4gXNuyxE-V-n7KuO1swMzU2Dw7hXDnN163B2GDsdJSp4vivSCxxZa0VDNsIFoVY75gneOmYHHVEg2VcLO9otvlgds1uuJXCySXqAjeB2RLYU-Rcv2sHm4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Subtle background decorative elements -->
+        <div
+          class="absolute top-1/4 right-0 w-[800px] h-[800px] bg-brand-coral/5 rounded-full blur-3xl -z-0 pointer-events-none transform translate-x-1/3 -translate-y-1/4"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-navy/5 rounded-full blur-3xl -z-0 pointer-events-none transform -translate-x-1/4 translate-y-1/4"
+        ></div>
+      </section>
+      <section class="py-[60px] bg-surface-container-lowest">
+        <div class="max-w-container-max-width mx-auto px-gutter">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+            <div class="lg:col-span-5 flex flex-col gap-10">
+              <h2 class="font-h2 text-h2 text-navy font-bold leading-tight">
+                Why Brands Choose
+                <span class="text-coral">Marketing Breath</span>
+              </h2>
+              <p class="text-on-surface-variant max-w-md">
+                Most agencies repackage old SEO tactics. We build authority that
+                works across AI search, answer engines, and traditional search
+                results.
+              </p>
+              <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-8">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-coral"
+                    >groups</span
+                  >
+                  <div class="flex flex-col">
+                    <span class="text-navy font-bold text-lg">100+</span>
+                    <span
+                      class="text-xs text-on-surface-variant uppercase tracking-wider"
+                      >Brands Helped</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-coral"
+                    >query_stats</span
+                  >
+                  <div class="flex flex-col">
+                    <span class="text-navy font-bold text-lg">300%+</span>
+                    <span
+                      class="text-xs text-on-surface-variant uppercase tracking-wider"
+                      >Avg. Traffic Growth</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-coral">star</span>
+                  <div class="flex flex-col">
+                    <span class="text-navy font-bold text-lg">50+</span>
+                    <span
+                      class="text-xs text-on-surface-variant uppercase tracking-wider"
+                      >5-Star Reviews</span
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-coral"
+                    >ads_click</span
+                  >
+                  <div class="flex flex-col">
+                    <span class="text-navy font-bold text-lg">Measurable</span>
+                    <span
+                      class="text-xs text-on-surface-variant uppercase tracking-wider"
+                      >Results That Matter</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div
+                class="bg-white p-6 rounded-xl border border-outline-variant hover:border-coral transition-colors"
+              >
+                <span class="material-symbols-outlined text-coral mb-4"
+                  >edit_note</span
+                >
+                <h3
+                  class="font-h3 text-lg font-bold text-navy mb-2 leading-tight"
+                >
+                  High-Quality Content
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Content created around entities, topics, user intent, and AI
+                  understanding.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-xl border border-outline-variant hover:border-coral transition-colors"
+              >
+                <span class="material-symbols-outlined text-coral mb-4"
+                  >campaign</span
+                >
+                <h3
+                  class="font-h3 text-lg font-bold text-navy mb-2 leading-tight"
+                >
+                  Brand Mentions &amp; Digital PR
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Increase authority through mentions on trusted websites and
+                  industry references.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-xl border border-outline-variant hover:border-coral transition-colors"
+              >
+                <span class="material-symbols-outlined text-coral mb-4"
+                  >hub</span
+                >
+                <h3
+                  class="font-h3 text-lg font-bold text-navy mb-2 leading-tight"
+                >
+                  NLP &amp; Semantic Optimization
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Help AI systems understand your brand and services through
+                  context.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-xl border border-outline-variant hover:border-coral transition-colors"
+              >
+                <span class="material-symbols-outlined text-coral mb-4"
+                  >link</span
+                >
+                <h3
+                  class="font-h3 text-lg font-bold text-navy mb-2 leading-tight"
+                >
+                  Authority Backlinks
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Earn high-quality, relevant backlinks that build trust and
+                  improve rankings.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-xl border border-outline-variant hover:border-coral transition-colors"
+              >
+                <span class="material-symbols-outlined text-coral mb-4"
+                  >monitor_heart</span
+                >
+                <h3
+                  class="font-h3 text-lg font-bold text-navy mb-2 leading-tight"
+                >
+                  Technical SEO &amp; UX
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Fast, secure, crawlable, and mobile-friendly websites
+                  optimized for users.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-xl border border-outline-variant hover:border-coral transition-colors"
+              >
+                <span class="material-symbols-outlined text-coral mb-4"
+                  >trending_up</span
+                >
+                <h3
+                  class="font-h3 text-lg font-bold text-navy mb-2 leading-tight"
+                >
+                  Conversion Rate Optimization
+                </h3>
+                <p class="text-sm text-on-surface-variant">
+                  Turn increased visibility into real results with user-focused
+                  CRO strategies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-low rounded-2xl p-8 md:p-12 border border-outline-variant flex flex-col lg:flex-row gap-8 items-center justify-between"
+          >
+            <div class="max-w-2xl">
+              <h4
+                class="font-h3 font-bold text-navy text-2xl lg:text-3xl leading-snug mb-6"
+              >
+                The future of search isn't SEO vs GEO. It's
+                <span class="text-coral"
+                  >SEO + GEO + AEO + Brand Authority</span
+                >
+                working together.
+              </h4>
+              <div class="flex flex-wrap items-center gap-6">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined text-navy">search</span
+                  ><span class="text-[10px] font-bold uppercase">SEO</span>
+                </div>
+                <span class="text-navy">+</span>
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined text-navy"
+                    >location_on</span
+                  ><span class="text-[10px] font-bold uppercase">GEO</span>
+                </div>
+                <span class="text-navy">+</span>
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined text-navy">chat</span
+                  ><span class="text-[10px] font-bold uppercase">AEO</span>
+                </div>
+                <span class="text-navy">+</span>
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined text-navy"
+                    >verified_user</span
+                  ><span class="text-[10px] font-bold uppercase"
+                    >Brand Authority</span
+                  >
+                </div>
+                <span class="text-navy">=</span>
+                <div class="flex items-center gap-2 text-coral">
+                  <span class="material-symbols-outlined">rocket_launch</span>
+                  <span class="text-[11px] font-bold leading-tight"
+                    >More Visibility<br />More Traffic</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 text-center lg:text-left">
+              <div class="flex flex-col gap-1">
+                <span class="text-navy font-bold text-xl"
+                  >Let's Grow Your AI Visibility</span
+                >
+              </div>
+              <a
+                class="btn-coral font-cta px-8 py-4 rounded-lg flex items-center justify-center gap-2"
+                href="#"
+              >
+                Get Started Today
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px] bg-white overflow-hidden">
+        <div class="max-w-container-max-width mx-auto px-gutter">
+          <!-- Section Header -->
+          <div class="flex flex-col gap-6 mb-16">
+            <div class="flex items-center justify-end gap-2 text-coral">
+              <span class="font-eyebrow text-eyebrow uppercase"
+                >Be Visible. Be Trusted. Get Chosen.</span
+              >
+              <span class="material-symbols-outlined text-sm"
+                >double_arrow</span
+              >
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <h2
+                class="lg:col-span-7 font-h2 text-h2 text-navy font-bold leading-tight"
+              >
+                We Make Your Brand Visible in the Age of AI-Powered Search.
+              </h2>
+              <p
+                class="lg:col-span-5 font-body text-body text-on-surface-variant"
+              >
+                Marketing Breath is a pioneer in GEO, helping brands gain
+                maximum visibility across AI-powered search engines like
+                <span class="text-coral font-semibold">ChatGPT</span>,
+                <span class="text-coral font-semibold">Google AI Mode</span>,
+                <span class="text-coral font-semibold">Gemini</span>,
+                <span class="text-coral font-semibold">Claude</span>,
+                <span class="text-coral font-semibold">Perplexity</span> and
+                more.
+              </p>
+            </div>
+          </div>
+          <!-- Core Content Area -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16"
+          >
+            <!-- Left Column: Summary -->
+            <div
+              class="lg:col-span-4 bg-surface-container-low p-8 rounded-2xl border-l-4 border-coral"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-brand-coral/10 flex items-center justify-center text-coral mb-6"
+              >
+                <span class="material-symbols-outlined">hub</span>
+              </div>
+              <p
+                class="font-body text-lg text-navy leading-relaxed font-medium"
+              >
+                We combine Content, Brand Mentions, NLP, Backlinks, Off-site
+                Content Marketing, and advanced GEO strategies to drive
+                visibility, clicks, and conversions for your brand.
+              </p>
+            </div>
+            <!-- Center/Right: GEO Visualization -->
+            <div
+              class="lg:col-span-8 relative flex items-center justify-center min-h-[400px] bg-white rounded-3xl soft-lift ring-1 ring-black/5"
+            >
+              <!-- Central GEO Circle -->
+              <div
+                class="relative z-10 w-32 h-32 md:w-40 md:h-40 rounded-full bg-navy flex flex-col items-center justify-center text-white text-center p-4 shadow-2xl border-4 border-coral"
+              >
+                <span class="font-bold text-xl md:text-2xl tracking-tighter"
+                  >GEO</span
+                >
+                <span
+                  class="text-[8px] md:text-[10px] uppercase opacity-80 leading-tight mt-1"
+                  >Generative Engine Optimization</span
+                >
+              </div>
+              <!-- Radial Icons (Decorative Layout) -->
+              <div class="absolute inset-0 flex items-center justify-center">
+                <!-- Platforms (Above) -->
+                <div
+                  class="absolute -translate-y-24 -translate-x-32 flex flex-col items-center gap-1 opacity-60"
+                >
+                  <span class="material-symbols-outlined text-navy">chat</span>
+                  <span class="text-[10px] font-bold">ChatGPT</span>
+                </div>
+                <div
+                  class="absolute -translate-y-32 flex flex-col items-center gap-1 opacity-60"
+                >
+                  <span class="material-symbols-outlined text-navy"
+                    >google</span
+                  >
+                  <span class="text-[10px] font-bold">Google AI</span>
+                </div>
+                <div
+                  class="absolute -translate-y-24 translate-x-32 flex flex-col items-center gap-1 opacity-60"
+                >
+                  <span class="material-symbols-outlined text-navy">bolt</span>
+                  <span class="text-[10px] font-bold">Gemini</span>
+                </div>
+                <!-- Pillars (Surrounding) -->
+                <div
+                  class="absolute translate-y-24 -translate-x-40 text-center w-24 opacity-40"
+                >
+                  <span class="text-[10px] font-bold uppercase">Content</span>
+                </div>
+                <div
+                  class="absolute translate-y-32 text-center w-24 opacity-40"
+                >
+                  <span class="text-[10px] font-bold uppercase">NLP</span>
+                </div>
+                <div
+                  class="absolute translate-y-24 translate-x-40 text-center w-24 opacity-40"
+                >
+                  <span class="text-[10px] font-bold uppercase">Backlinks</span>
+                </div>
+              </div>
+              <!-- Connecting Lines (Stylized with border) -->
+              <div
+                class="absolute w-[400px] h-[400px] border border-outline-variant rounded-full opacity-20"
+              ></div>
+              <div
+                class="absolute w-[280px] h-[280px] border border-outline-variant rounded-full opacity-30"
+              ></div>
+            </div>
+          </div>
+          <!-- Key Benefits Bar -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
+          >
+            <div class="flex flex-col gap-3">
+              <span class="material-symbols-outlined text-coral"
+                >visibility</span
+              >
+              <div>
+                <h4 class="font-bold text-navy">AI Search Visibility</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Rank and get referenced in AI answers.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <span class="material-symbols-outlined text-coral">verified</span>
+              <div>
+                <h4 class="font-bold text-navy">Stronger Brand Trust</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Build authority across trusted sources.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <span class="material-symbols-outlined text-coral"
+                >person_add</span
+              >
+              <div>
+                <h4 class="font-bold text-navy">Qualified Traffic</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Attract highly engaged users ready to convert.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <span class="material-symbols-outlined text-coral">insights</span>
+              <div>
+                <h4 class="font-bold text-navy">Measurable Results</h4>
+                <p class="text-sm text-on-surface-variant">
+                  Track growth, performance and ROI with clarity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Action Footer -->
+        <div class="bg-navy py-8 text-white mt-12">
+          <div
+            class="max-w-container-max-width mx-auto px-gutter flex flex-col lg:flex-row items-center justify-between gap-8"
+          >
+            <div class="font-h3 text-xl font-bold flex-1">
+              The Future of Search is Generative. We Help You Own It.
+            </div>
+            <div
+              class="flex flex-wrap items-center justify-center gap-6 text-sm opacity-90"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-coral text-lg"
+                  >check_circle</span
+                >
+                Future-Ready Strategies
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-coral text-lg"
+                  >check_circle</span
+                >
+                Ethical &amp; Sustainable
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-coral text-lg"
+                  >check_circle</span
+                >
+                Custom Solutions
+              </div>
+            </div>
+            <a
+              class="btn-coral px-8 py-4 rounded-full font-cta whitespace-nowrap"
+              href="#"
+            >
+              Let's Get You AI-Visible Today!
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px] bg-surface-container-low">
+        <div class="max-w-container-max-width mx-auto px-gutter">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1: Business Growth -->
+            <div
+              class="bg-white p-8 rounded-2xl soft-lift flex flex-col items-center text-center gap-4"
+            >
+              <div class="text-coral">
+                <span class="material-symbols-outlined text-[48px]"
+                  >travel_explore</span
+                >
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-h1 text-[40px] font-bold text-navy">3X</span>
+                <span
+                  class="font-body text-on-surface-variant text-sm font-medium"
+                  >Business Growth</span
+                >
+              </div>
+            </div>
+            <!-- Card 2: Happy Customers -->
+            <div
+              class="bg-white p-8 rounded-2xl soft-lift flex flex-col items-center text-center gap-4"
+            >
+              <div class="text-coral">
+                <span class="material-symbols-outlined text-[48px]"
+                  >handshake</span
+                >
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-h1 text-[40px] font-bold text-navy">5+</span>
+                <span
+                  class="font-body text-on-surface-variant text-sm font-medium"
+                  >Happy Customers</span
+                >
+              </div>
+            </div>
+            <!-- Card 3: Expert Advisors -->
+            <div
+              class="bg-white p-8 rounded-2xl soft-lift flex flex-col items-center text-center gap-4"
+            >
+              <div class="text-coral">
+                <span class="material-symbols-outlined text-[48px]"
+                  >support_agent</span
+                >
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-h1 text-[40px] font-bold text-navy">10+</span>
+                <span
+                  class="font-body text-on-surface-variant text-sm font-medium"
+                  >Expert Advisors</span
+                >
+              </div>
+            </div>
+            <!-- Card 4: Projects Completed -->
+            <div
+              class="bg-white p-8 rounded-2xl soft-lift flex flex-col items-center text-center gap-4"
+            >
+              <div class="text-coral">
+                <span class="material-symbols-outlined text-[48px]"
+                  >analytics</span
+                >
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-h1 text-[40px] font-bold text-navy">10+</span>
+                <span
+                  class="font-body text-on-surface-variant text-sm font-medium"
+                  >Projects Completed</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[60px] bg-white">
+        <div class="max-w-container-max-width mx-auto px-gutter">
+          <div class="text-center mb-16">
+            <h2 class="font-h2 text-h2 text-navy font-bold mb-4">
+              Our <span class="text-coral">Services</span>
+            </h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">
+              Everything you need to dominate search — from Google to AI-powered
+              answers.
+            </p>
+            <div class="w-16 h-1 bg-coral mx-auto mt-4 rounded-full"></div>
+          </div>
+          <div class="banners-wrap">
+            <!-- Service 1: High-Quality Content -->
+            <div class="service-row scheme-navy">
+              <div class="s-text-col">
+                <span class="b-tag">01 — High-Quality Content</span>
+                <h3 class="b-title">
+                  Content that earns trust from humans and AI alike
+                </h3>
+                <p class="b-body">
+                  We craft entity-rich, intent-driven content built around your
+                  brand, products, and audience — designed to rank in
+                  traditional search and get cited by AI-powered platforms like
+                  Google SGE, Perplexity, and ChatGPT.
+                </p>
+                <div class="b-bullets">
+                  <div class="b-bullet">
+                    Structured around topics, entities &amp; user intent signals
+                  </div>
+                  <div class="b-bullet">
+                    Optimised for both featured snippets and LLM citations
+                  </div>
+                  <div class="b-bullet">
+                    Regularly refreshed to maintain topical authority over time
+                  </div>
+                </div>
+              </div>
+              <div class="s-vis-col">
+                <div class="b-icon">
+                  <span class="b-num">01</span>
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      fill="#fe7146"
+                      height="28"
+                      opacity="0.15"
+                      rx="3"
+                      width="22"
+                      x="10"
+                      y="6"
+                    ></rect>
+                    <rect
+                      height="28"
+                      rx="3"
+                      stroke="#fe7146"
+                      stroke-width="2"
+                      width="22"
+                      x="10"
+                      y="6"
+                    ></rect>
+                    <line
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      x1="15"
+                      x2="27"
+                      y1="14"
+                      y2="14"
+                    ></line>
+                    <line
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      x1="15"
+                      x2="27"
+                      y1="19"
+                      y2="19"
+                    ></line>
+                    <line
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      x1="15"
+                      x2="22"
+                      y1="24"
+                      y2="24"
+                    ></line>
+                    <circle
+                      cx="33"
+                      cy="33"
+                      fill="#fe7146"
+                      opacity="0.2"
+                      r="8"
+                    ></circle>
+                    <path
+                      d="M29 33 L32 36 L38 30"
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.2"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Service 2: Brand Mentions & Digital PR -->
+            <div class="service-row alt scheme-coral">
+              <div class="s-text-col">
+                <span class="b-tag">02 — Brand Mentions &amp; Digital PR</span>
+                <h3 class="b-title">
+                  Build authority that search engines and LLMs respect
+                </h3>
+                <p class="b-body">
+                  Earn editorial coverage, podcast features, and references from
+                  high-trust publications — signals that tell both Google and
+                  large language models your brand is credible, established, and
+                  worth recommending.
+                </p>
+                <div class="b-bullets">
+                  <div class="b-bullet">
+                    Placements on authoritative news, blogs &amp; trade media
+                  </div>
+                  <div class="b-bullet">
+                    Unlinked brand mentions that feed AI knowledge graphs
+                  </div>
+                  <div class="b-bullet">
+                    Outreach campaigns that build long-term press relationships
+                  </div>
+                </div>
+              </div>
+              <div class="s-vis-col">
+                <div class="b-icon">
+                  <span class="b-num">02</span>
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 16 L20 16 L28 8 L28 32 L20 24 L8 24 Z"
+                      fill="rgba(255,255,255,0.2)"
+                      stroke="white"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      d="M20 20 L20 36 L16 36 L16 20"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      d="M30 14 C33 14 36 17 36 20 C36 23 33 26 30 26"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      d="M31 10 C36 10 41 14.5 41 20 C41 25.5 36 30 31 30"
+                      opacity="0.5"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Service 3: NLP & Semantic Optimisation -->
+            <div class="service-row scheme-light">
+              <div class="s-text-col">
+                <span class="b-tag">03 — NLP &amp; Semantic Optimisation</span>
+                <h3 class="b-title">
+                  Make your brand impossible for AI to ignore
+                </h3>
+                <p class="b-body">
+                  Beyond keywords — we optimise your content using semantic
+                  relevance, topical depth, and structured context so AI systems
+                  accurately understand your expertise and surface your brand in
+                  generated answers and summaries.
+                </p>
+                <div class="b-bullets">
+                  <div class="b-bullet">
+                    Topical cluster mapping for comprehensive subject coverage
+                  </div>
+                  <div class="b-bullet">
+                    Schema markup &amp; structured data to aid machine
+                    comprehension
+                  </div>
+                  <div class="b-bullet">
+                    Semantic gap analysis to identify content opportunities
+                  </div>
+                </div>
+              </div>
+              <div class="s-vis-col">
+                <div class="b-icon">
+                  <span class="b-num">03</span>
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <ellipse
+                      cx="18"
+                      cy="22"
+                      fill="#fe7146"
+                      opacity="0.12"
+                      rx="9"
+                      ry="11"
+                      stroke="#fe7146"
+                      stroke-width="2"
+                    ></ellipse>
+                    <ellipse
+                      cx="30"
+                      cy="22"
+                      fill="#fe7146"
+                      opacity="0.12"
+                      rx="9"
+                      ry="11"
+                      stroke="#fe7146"
+                      stroke-width="2"
+                    ></ellipse>
+                    <rect
+                      fill="#fe7146"
+                      height="12"
+                      opacity="0.15"
+                      rx="1"
+                      width="6"
+                      x="21"
+                      y="22"
+                    ></rect>
+                    <circle
+                      cx="18"
+                      cy="19"
+                      fill="#fe7146"
+                      opacity="0.5"
+                      r="2.5"
+                    ></circle>
+                    <circle
+                      cx="30"
+                      cy="19"
+                      fill="#fe7146"
+                      opacity="0.5"
+                      r="2.5"
+                    ></circle>
+                    <line
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                      x1="22"
+                      x2="26"
+                      y1="26"
+                      y2="26"
+                    ></line>
+                    <path
+                      d="M24 33 L24 38"
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      d="M20 38 L28 38"
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Service 4: Authority Backlinks -->
+            <div class="service-row alt scheme-navy">
+              <div class="s-text-col">
+                <span class="b-tag">04 — Authority Backlinks</span>
+                <h3 class="b-title">
+                  High-quality links that drive rankings across every platform
+                </h3>
+                <p class="b-body">
+                  We secure strategic backlinks from authoritative, contextually
+                  relevant domains — building the domain trust and link equity
+                  needed to dominate organic rankings, improve AI
+                  discoverability, and stay ahead of competitors.
+                </p>
+                <div class="b-bullets">
+                  <div class="b-bullet">
+                    Manual outreach to niche-relevant, high-DA publishers
+                  </div>
+                  <div class="b-bullet">
+                    Digital PR link building through newsworthy content assets
+                  </div>
+                  <div class="b-bullet">
+                    Toxic link audits &amp; disavow strategy to protect your
+                    profile
+                  </div>
+                </div>
+              </div>
+              <div class="s-vis-col">
+                <div class="b-icon">
+                  <span class="b-num">04</span>
+                  <svg
+                    fill="none"
+                    viewbox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 28 L16 32 C13.8 34.2 13.8 37.8 16 40 C18.2 42.2 21.8 42.2 24 40 L30 34 C32.2 31.8 32.2 28.2 30 26"
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2.5"
+                    ></path>
+                    <path
+                      d="M28 20 L32 16 C34.2 13.8 34.2 10.2 32 8 C29.8 5.8 26.2 5.8 24 8 L18 14 C15.8 16.2 15.8 19.8 18 22"
+                      opacity="0.55"
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2.5"
+                    ></path>
+                    <line
+                      stroke="#fe7146"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      x1="22"
+                      x2="26"
+                      y1="26"
+                      y2="22"
+                    ></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Service 5: Technical SEO & UX -->
+            <div class="service-row scheme-coral">
+              <div class="s-text-col">
+                <span class="b-tag">05 — Technical SEO &amp; UX</span>
+                <h3 class="b-title">A fast</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px] bg-white">
+        <div class="max-w-container-max-width mx-auto px-gutter">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Column: Content -->
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-4">
+                <span
+                  class="font-eyebrow text-eyebrow text-coral uppercase font-bold tracking-wider"
+                  >ABOUT US</span
+                >
+                <h2
+                  class="font-h2 text-h2-mobile md:text-h2 text-navy font-bold leading-tight"
+                >
+                  We are a dynamic team of creative people of innovation &amp;
+                  marketing
+                </h2>
+                <p class="font-body text-body text-on-surface-variant">
+                  As a process transformation company, we rethink and rebuild
+                  processes for the digital age by combining the speed and
+                  insight of design thinking with the scale and accuracy of data
+                  analytics. We rethink the process and work together to
+                  streamline it, rebuild it, and deliver it.
+                </p>
+              </div>
+              <!-- Sub-grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div class="flex flex-col gap-2">
+                  <h4 class="font-h3 text-lg font-bold text-navy">
+                    Boost Your Business
+                  </h4>
+                  <p class="text-sm text-on-surface-variant font-body">
+                    When it comes to sustainability and corporate
+                    responsibility, we believe the normal rules of business.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="font-h3 text-lg font-bold text-navy">
+                    Filtering Business Data
+                  </h4>
+                  <p class="text-sm text-on-surface-variant font-body">
+                    The industry has recognized us for our consistent endeavors
+                    to provide end-to-end customized solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Visual -->
+            <div class="relative">
+              <div
+                class="rounded-2xl overflow-hidden soft-lift bg-surface-container-low aspect-video md:aspect-square flex items-center justify-center"
+              >
+                <img
+                  alt="Professional digital marketing dashboard and analytics visualization"
+                  class="w-full h-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4bNLKZHHGQDs5tkPgxzCT3NZ9QuiXA7VLb1v_z0KWbA6-n9AfgztvhIMNAFqmnwyZCrz9pka_DqH_mZLozVDb8eoAsMI636_4lqfWO2aSiy9fkk_QbeyzDJGBbRguIyYGpzfaG9QOlf5HLWIAhVX-_w1w2YeRCnDmAPDslqfMDx3li48lI_TVjrwCfnMx2w6AdFMHq1_TIKwDYLnLYrrA0n_xgbuyrjvkOuV6Ml0xnMNwE1Np2WmUl2Ie29KOqyO8xtNuEevkuuw"
+                />
+              </div>
+              <!-- Decorative accent -->
+              <div
+                class="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-coral/10 rounded-full blur-2xl -z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 7: Our Latest Case Studies -->
+      <section class="py-[60px] bg-surface-container-lowest">
+        <div class="max-w-container-max-width mx-auto px-gutter">
+          <div class="text-center mb-12">
+            <h2 class="font-h2 text-h2 text-navy font-bold mb-8">
+              Our Latest Case Studies
+            </h2>
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
+              <button
+                class="filter-btn active font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-coral border-b-2 border-brand-coral"
+              >
+                All
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                Content Creation
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                Email Marketing
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                Guest Posting
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                Influencer Marketing
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                Local SEO
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                SEO
+              </button>
+              <button
+                class="filter-btn font-body text-sm font-medium pb-1 transition-colors hover:text-coral text-on-surface-variant"
+              >
+                Social Media Marketing
+              </button>
+            </div>
+          </div>
+          <!-- Grid -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
+          >
+            <!-- Card 1 -->
+            <div
+              class="case-study-card rounded-lg overflow-hidden bg-surface-container-low shadow-sm cursor-pointer aspect-square relative"
+            >
+              <img
+                alt="Content creation dashboard visualization"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvVsTqUKTI8MQLGiDeke3DZtVkbOHzZdukQKDdC3T0I035podCxBxEKB3Xk3rZ7wO42_WDm-nrcZy48Jdbr69PIaWt4nu4Lol9_FxDCH1OaO_KgYNtZXcWztji6wEwDT0W4ZRYKTc2MlOHCXyW97Kxhspfet7sJGYnpF1QzXeNbd6JT74NyrWRRUJeOiW-5A99aZAEaMmJdtelC_hboKZzCyuNq7bHv6uSuH9LElcrFJLiwGBGNpFqaJ5iv3SaASAxKzvnncOqOX4"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6"
+              >
+                <h3 class="text-white font-bold text-lg">
+                  Enterprise Content Strategy
+                </h3>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="case-study-card rounded-lg overflow-hidden bg-surface-container-low shadow-sm cursor-pointer aspect-square relative"
+            >
+              <img
+                alt="Email marketing analytics dashboard"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbWKFDAYJxz5jk7WFJuHHn68AGKJlPbda6-kV8DEv4nge2K3RzDDk_onT-YSqO_KgHE0tUtTJxNprHQ9Y8skDgcLt3sYTjdVbG3DJhe0mofb4t8k4GdKUhar416ERGwcWN6mKOHNdj8m_dNIZvF7dH1gx8CjsxeezXymImSLGemwCJ8q7eJ8ueo9DQ8byIMpk3e6V4XsmVzUHXlMADaX4w05xMgi1cWvyvP7IHfaMcfKGhTiMjSUMtdBmizotAx36rZGMzf3GzIqY"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6"
+              >
+                <h3 class="text-white font-bold text-lg">
+                  Automated Email Workflows
+                </h3>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="case-study-card rounded-lg overflow-hidden bg-surface-container-low shadow-sm cursor-pointer aspect-square relative"
+            >
+              <img
+                alt="SEO backlink analysis tool interface"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwaXK57r7q98FMX-yKy5GxB4Ue73EQx-yBSUd04MfdsMrwcc-Fk1iiS88fAv2Kv-OtU9ONB4sT60w-lycY5osoUwtWlwtU6JZdI9lykR85ELL9m5VPwvZE_t-wAeZR0GBFbAlBFWyx1UFbhhK_1E9XxRXa1Ah12SpoeExLaVV6pPw6vsHSg50BoxOAKtDC0NeBfcDZBKskFhPz57BhklTACcqqVbKZP4mrV-UwivXtn7ZT7djLSgoBqNBmd5vPJ_Aw5gVgvqFd1k8"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6"
+              >
+                <h3 class="text-white font-bold text-lg">
+                  Global SEO Dominance
+                </h3>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="case-study-card rounded-lg overflow-hidden bg-surface-container-low shadow-sm cursor-pointer aspect-square relative"
+            >
+              <img
+                alt="Social media engagement metrics dashboard"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdJvH46grIZnwb8w8JBl86gVPRKqVPt1i_IN_bUTBOA4nMzmm1TaghhxbKoc0pxWB4T3_cHIKYmf66lfhsEzF11N7QEmD4uj7gvKLAvk7Na33N30WUe579yvx4H774WxRqE2nY4GEZjwOkkjOVxFG71mPrqsz1_ixpxrE8cd0mZxuWMkwPwD1-SR6Uw6tMJvghf_BhgvWlj3Iu7hsXP-ixN4O-tFBRKZK7DXwvZBWpG-kOdObC3hJqOSHgTDb6kRLFqrqQ6gGtOl8"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6"
+              >
+                <h3 class="text-white font-bold text-lg">
+                  Social Media Growth
+                </h3>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="case-study-card rounded-lg overflow-hidden bg-surface-container-low shadow-sm cursor-pointer aspect-square relative"
+            >
+              <img
+                alt="Local SEO map pack tracking interface"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAptjZH-WSD-gT_5K7ZtlVEy6WAbnSedqIQniom4a6hxgiE4uGmNZlbv_FyWGzv-Ud9p3iNWFsG3zJKqHbdM_RHFXF4-dH7B9OMni2UpS8Wh2M-9--wtxAO39-OUdCCAgotwlh5lhPdgqBVopIF2sCqR8JwqlcG4O2VECjvBfHO3U0H3a03DEuXoHRhqVvL8fu-T5W09m5jIgWsPTd7PRaisSYi0NYwqqvduuL1L6yXrL9ehJtdk4F-4w-7IkUKzXJldklvQswXWog"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6"
+              >
+                <h3 class="text-white font-bold text-lg">
+                  Local Search Dominance
+                </h3>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="case-study-card rounded-lg overflow-hidden bg-surface-container-low shadow-sm cursor-pointer aspect-square relative"
+            >
+              <img
+                alt="Advanced SEO keyword tracking dashboard"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfXZvlr1KDv2sHhbSBEdVs0q8qNMAX1QCoWnUa_i8ZDCrgNTdPtCJEemxMHgLCoLTzr_kwqRYRtFlzOuLnlh5_ZHw9IvhDgAHseBPhMW-zFreTqqOh_7BwRYitSV_bU77c51itRSI_adk_jErmnBVaR4qA8fi4xtpv2xYbHfJKY2BrsSA8CReWH-vN8AWSgppeS88_hcQ37Tl20rfLdYImGR6uDIIOQ0-Q2ETozZ2xu7pmxc1c_vMCRbS0aWaxMFOqQFrVtNlkTP8"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6"
+              >
+                <h3 class="text-white font-bold text-lg">
+                  AI-Powered SEO Optimization
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- CTA -->
+          <div class="text-center">
+            <a
+              class="inline-block px-8 py-3 rounded-full border-2 border-outline-variant text-navy font-cta font-semibold hover:border-coral hover:text-coral transition-colors"
+              href="#"
+            >
+              View All Our Work
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
